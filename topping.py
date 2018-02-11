@@ -1,8 +1,8 @@
-requested_topping = ['mushrooms','extra cheese']
-if 'mushrooms' in requested_topping:
-    print("Adding mushrooms.")
-elif 'pepperoni' in requested_topping:
-    print("Adding pepperoni.")
-elif 'extra cheese' in requested_topping:
-    print("Adding extra cheese.")
-print("\nFinished making your pizza!")
+requested_toppings = ['mushrooms','green peppers','extra cheese']
+
+if requested_toppings:
+    for requested_topping in requested_toppings:
+        print("Adding " + requested_topping + ".")
+    print("\nFinished making your pizza!")
+else:
+    print("Are you sue you want a plain pizza?")
